@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bod{
+background-color: #111;
+    height: 100%;
+}
+.container{
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%  -50%);
+    top: 20%;
+    left: 30%;
+    background: #708a81;
+    background: rgb(226, 224, 224);
+    min-height: fit-content;
+    color: #111;
+    text-align: center;
+    border-radius: 10px;
+    /* overflow-y: scroll; */
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#tas{
+    position: relative;
+    padding: 30px 20px;
+}
+#tas input{
+    width: 75%;
+    height: 45px ;
+    font-family: 'poppins',sans-serif;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    position: relative;
+    background-color: #708a81;
+}
+#tas input:focus{
+    outline: none;
+    border-color: #fff;
+}
+#tas button{
+    width: 15%;
+    float: right;
+    position: relative;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+    background-color: #111;
+    color: white;
+    transform: rotate();
+}
+#tas button:focus{
+    transform: rotate(x);
+}
+#task{
+    background-color: transparent;
+    height: fit-content;
+    margin-bottom: 10px;
+    position: relative;
+    /* padding: 30px 20px; */
+    
+    border-radius: 10px;
+    width: 100%;
+    
+   
+}
+.tsk{
+    background-color: #111;
+    height: 50px;
+    margin-bottom: 8px;
+    display: flex;
+    padding: 5px 10px;
+    border: 1px solid #939697;
+    border-radius: 5px;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    cursor: pointer;
+ 
+}
+  
+
+  
+
+.tsk span{
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+.tsk button{
+    background:#e5d1;
+    color: #e5d1b8;
+    width: 45px;
+    height: 100%;
+    border-radius: 5px;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+

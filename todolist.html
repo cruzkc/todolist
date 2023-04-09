@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>Document</title>
+</head>
+<body  class="bod" >
+    <div class="container">
+        <h1>My todo list 2023</h1>
+<div id="tas">
+    <input  id="text" type="text" placeholder="Task to be done.....">
+    <button id="push">ADD</button>
+</div>
+<div id="task"></div>
+    </div>
+</body>
+</html>
+
+<script>
+    let textx = document.getElementById("text")
+ document.querySelector('#push').onclick = function(){
+    if(document.querySelector('#tas input').value == 0){
+        alert("Please Enter a Task")
+    }
+
+    else{
+        document.querySelector('#task').innerHTML += `
+            <div class="tsk">
+                <span id="taskname">
+                    ${document.querySelector('#tas input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        `;
+         textx.value=""
+    }
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+
+
+        }
+    
+</script>
